@@ -9,14 +9,14 @@
 
 
     <TextView
-        android:id="@+id/songs"
+        android:id="@+id/song_title"
        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:text="@string/song"/>
 
     <TextView
-        android:id="@+id/artist"
+        android:id="@+id/song_artist"
        android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:padding="16dp"

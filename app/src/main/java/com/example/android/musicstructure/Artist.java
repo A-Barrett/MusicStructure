@@ -12,7 +12,7 @@ public class Artist extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_main );
+        setContentView( R.layout.song_list );
 
         // create an array of artists
         ArrayList<String> artist = new ArrayList<>();
@@ -30,7 +30,7 @@ public class Artist extends AppCompatActivity {
 
         ArrayAdapter itemsAdapter = new ArrayAdapter<>( this, android.R.layout.simple_list_item_1, artist );
 
-        ListView listView = (ListView) findViewById( R.id.list_view );
+        ListView listView = (ListView) findViewById( R.id.list );
 
         listView.setAdapter( itemsAdapter );
 

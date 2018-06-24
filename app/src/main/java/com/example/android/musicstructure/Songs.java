@@ -13,7 +13,7 @@ public class Songs extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_main );
+        setContentView( R.layout.song_list );
 
         // create an array of songs
         ArrayList<String> songs = new ArrayList<>();
@@ -31,7 +31,7 @@ public class Songs extends AppCompatActivity {
 
         ArrayAdapter<String> itemsAdapter = new ArrayAdapter<>( this, android.R.layout.simple_list_item_1, songs );
 
-        ListView listView = findViewById( R.id.list_view );
+        ListView listView = findViewById( R.id.list );
 
         listView.setAdapter( itemsAdapter );
 
