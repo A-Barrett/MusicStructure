@@ -1,5 +1,6 @@
 package com.example.android.musicstructure;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
