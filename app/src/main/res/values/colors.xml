@@ -12,5 +12,7 @@
 
     <!-- Background color for the artist category -->
     <color name="category_artist">#16AFCA</color>
+    <color name="blue_grey">#bcd4e6</color>
+    <color name="pale_blue">#e1ecf4</color>
 
 </resources>
