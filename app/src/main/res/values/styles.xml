@@ -12,4 +12,149 @@
 
     <style name="myTheme" parent="Theme.AppCompat.NoActionBar" />
 
+    <style name="Linear_main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/blue_grey</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="cardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Relative_main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingStart">8dp</item>
+    </style>
+
+    <style name="SongTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ArtistTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/song_text_view</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ImageView_main">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="NowPlayingRelativeLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#bcd4e6</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="NowPlayingImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="PlayButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">116dp</item>
+    </style>
+
+    <style name="FastForwardButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignTop">@+id/play_button</item>
+        <item name="android:layout_toEndOf">@+id/play_button</item>
+        <item name="android:layout_toRightOf">@+id/play_button</item>
+    </style>
+
+    <style name="RewindButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignTop">@+id/play_button</item>
+        <item name="android:layout_marginLeft">64dp</item>
+        <item name="android:layout_marginStart">64dp</item>
+    </style>
+
+    <style name="CurrentSongText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">71dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CurrentArtistText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">41dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SeekBar">
+        <item name="android:layout_width">235dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:thumbTint">@color/black</item>
+    </style>
+
+    <style name="MuteButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignLeft">@+id/now_playing</item>
+        <item name="android:layout_alignStart">@+id/now_playing</item>
+        <item name="android:layout_below">@+id/current_artist</item>
+        <item name="android:layout_marginTop">-41dp</item>
+    </style>
+
+    <style name="VolumeButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignBottom">@+id/mute</item>
+        <item name="android:layout_alignEnd">@+id/now_playing</item>
+        <item name="android:layout_alignRight">@+id/now_playing</item>
+    </style>
+
+    <style name="ListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:divider">@null</item>
+    </style>
+
 </resources>

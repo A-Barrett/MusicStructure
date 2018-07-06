@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.song_list);
 
-        ArrayList<Song> songs = new ArrayList<Song>();
+        ArrayList<Song> songs = new ArrayList<>();
         songs.add(new Song("Where Is The Love", "Black Eyed Peas"));
         songs.add(new Song("What Ifs", "Kane Brown"));
         songs.add(new Song("The Fighter", "Keith Urban"));
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         final SongAdapter adapter = new SongAdapter(this, songs);
 
-        ListView listView = (ListView) findViewById(R.id.list);
+        ListView listView = findViewById(R.id.list);
 
         listView.setAdapter(adapter);
 
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Song item = (Song) adapter.getItem(position);
+                Song item = adapter.getItem(position);
                 Intent nowPlaying = new Intent(getApplicationContext(), NowPlaying.class);
                 nowPlaying.putExtra(KEY_SONG, item.getSong());
                 nowPlaying.putExtra(KEY_ARTIST, item.getArtist());

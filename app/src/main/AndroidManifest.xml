@@ -18,9 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NowPlaying">
-        </activity>
-        <activity android:name=".SongAdapter" />
+        <activity android:name=".NowPlaying"/>
+
     </application>
 
 </manifest>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="CardCornerSmall">10dp</dimen>
+    <dimen name="CardMaxElevationLow">10dp</dimen>
+    <dimen name="CardElevationLow">1dp</dimen>
+    <dimen name="ContentPaddingSmall">10dp</dimen>
+    <dimen name="ContentPaddingBottomSmall">8dp</dimen>
 </resources>

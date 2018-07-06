@@ -15,12 +15,6 @@ public class SongAdapter extends ArrayAdapter<Song> {
         super(context, 0, songs);
     }
 
-
-    static class ViewHolder {
-        private TextView songTextView;
-        private TextView artistTextView;
-    }
-
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
@@ -45,5 +39,10 @@ public class SongAdapter extends ArrayAdapter<Song> {
         holder.artistTextView.setText(currentSong.getArtist());
 
         return convertView;
+    }
+
+    static class ViewHolder {
+        private TextView songTextView;
+        private TextView artistTextView;
     }
 }

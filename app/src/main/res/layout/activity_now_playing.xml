@@ -4,99 +4,51 @@
     android:layout_height="match_parent"
     android:fillViewport="true">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#bcd4e6"
-        android:padding="16dp">
+    <RelativeLayout style="@style/NowPlayingRelativeLayout">
 
         <ImageView
             android:id="@+id/now_playing"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:adjustViewBounds="true"
-            android:src="@drawable/natural" />
+            android:src="@drawable/natural"
+            style="@style/NowPlayingImage" />
 
         <ImageView
             android:id="@+id/play_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="116dp"
-            android:src="@drawable/play_arrow" />
+            android:src="@drawable/play_arrow"
+            style="@style/PlayButton" />
 
         <ImageView
             android:id="@+id/fast_forward"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/play_button"
-            android:layout_toEndOf="@+id/play_button"
             android:src="@drawable/fast_forward"
-            android:layout_toRightOf="@+id/play_button" />
+            style="@style/FastForwardButton" />
 
         <ImageView
             android:id="@+id/rewind"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/play_button"
-            android:layout_marginStart="64dp"
             android:src="@drawable/rewind"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="64dp" />
+            style="@style/RewindButton" />
 
         <TextView
             android:id="@+id/current_song"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="71dp"
-            android:padding="16dp"
             android:text="@string/song"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            style="@style/CurrentSongText" />
 
         <TextView
             android:id="@+id/current_artist"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="41dp"
-            android:padding="16dp"
             android:text="@string/artist"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            style="@style/CurrentArtistText" />
 
         <SeekBar
             android:id="@+id/seekbar"
-            android:layout_width="235dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="16dp" />
+            style="@style/SeekBar" />
 
         <ImageView
             android:id="@+id/mute"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/now_playing"
-            android:layout_below="@+id/current_artist"
-            android:layout_marginTop="-41dp"
             android:src="@drawable/mute"
-            android:layout_alignLeft="@+id/now_playing" />
+            style="@style/MuteButton" />
 
         <ImageView
             android:id="@+id/volume"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/mute"
-            android:layout_alignEnd="@+id/now_playing"
             android:src="@drawable/volume"
-            android:layout_alignRight="@+id/now_playing" />
+            style="@style/VolumeButton" />
 
     </RelativeLayout>
 
